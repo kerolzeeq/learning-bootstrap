@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UNITED RED</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
 </head>
@@ -12,18 +12,23 @@
     <style>
         body, html{
             background-image:linear-gradient(to bottom right,red,yellow);
+            background-attachment:fixed;
             height:100%;
         }
         .my-custom-row{
-            
+        
             height:100%;
         }
-
+       
         h1 {
             text-align: center;
             font-size: 80px;
             font-family: "Audiowide";
             color:black;
+        }
+
+        .form-group {
+        margin-bottom: 30px;
         }
 
         #MUlogo{
@@ -53,14 +58,49 @@
         
          -->
 
-        <div class="row my-custom-row">
+        <div class="row my-custom-row justify-content-center  align-items-center"> <!-- between/evenly/center/end/start -->
             <div class="col-sm-4"> <h1>GLORY GLORY MAN UNITED</h1></div> <!-- Offset is setting a bit of space -->
             <div class="col-sm-4"><img src="manutd.png" id="MUlogo"></div>
             <div class="col-sm-4"> <h1>GLORY GLORY MAN UNITED</h1></div>
             
             
         </div>
+        <div class="row mt-5">
+            
+        </div>
+
+        <div class="row justify-content-center  align-items-center text-center">
+            
+            <div class="col-sm-4"><a href="https://www.manutd.com/"><button type="button" class="btn btn-dark btn-lg">WEBSITE</button></a></div>
+            <div class="col-sm-4"><button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">WHICH PLAYER ARE YOU?</button></div>
+            <div class="col-sm-4"><a href="https://www.manchestereveningnews.co.uk/all-about/manchester-united-fc"><button type="button" class="btn btn-dark btn-lg">TRANSFERS</button></a></div>
+        </div>
+
         
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">You are :</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row justify-content-center align-items-center text-center"><h2>CAVANI 7</h2></div>
+                <div class="row justify-content-center align-items-center text-center">
+                    <img class="img-responsive" src="https://assets.manutd.com/AssetPicker/images/0/0/14/69/935177/Edinson-Cavani-Landingpage-11602512695369.jpg" style="height: 320px ; width: 350px">
+                </div>
+            
+            
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            
+            </div>
+        </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
